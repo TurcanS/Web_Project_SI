@@ -1,1 +1,1 @@
-Studiu Individual Nr.2
+## Studiu Individual Nr.2
