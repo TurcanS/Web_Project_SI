@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder Torrent - Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="icon" type="image/png" href="ico/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: white;">
+    <script>
+        var slideIndex = 0;
+        var timer1;
+        var slides = document.getElementsByClassName("mySlides");
+    
+        function showSlides() {
+            clearTimeout(timer1);
+    
+            for (var i = 0; i < slides.length; i++)
+                slides[i].style.display = "none";
+            
+            slides[slideIndex].style.display = "block"; 
+    
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+    
+            timer1 = setTimeout(showSlides, 4000);
+        }
+    
+        window.onload = showSlides;
+    </script>
+    <body>
+        <div>
+            <div class="navbar">
+                <div class="logo-button">
+                    <div class="logo">
+                        <h2 style="font-family: 'Permanent Marker', cursive;">Thunder <span style="color: cyan;">Torrent</span></h2>
+                    </div>
+                    <div class="buttons">
+                        <a href="index.html">Home</a>
+                        <a href="index.html#section1">Torrents</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="index.html#section2">Contact Us</a>
+                    </div>
+                </div>
+                <div class="login">
+                    <a href="login.html">Login</a>
+                    <a href="#">Register</a>
+                </div>
+            </div>
+            <div class="gallery-section">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade" >
+                        <img src="./img/img1.jpg">
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="./img/img2.jpg">
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="./img/img3.jpg">
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="./img/img4.jpg">
+                    </div>
+                </div>
+                <div class="centered-text">
+                    <h1>Welcome to our <span style="color: cyan;">Gallery</span></h1>
+                    <p>Check out some of the best images from our collection</p>
+                    <a href="#gallery-row">Check out the images.</a>
+                </div>
+            </div>
+            <div class="gallery-row" id="gallery-row">
+                <div class="gallery-item">
+                    <img src="./img/img1.jpg" alt="Image 1">
+                    <p>Image 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/img2.jpg" alt="Image 2">
+                    <p>Image 2</p>
+                </div>
+            </div>
+            <div class="gallery-row">
+                <div class="gallery-item">
+                    <img src="./img/img3.jpg" alt="Image 3">
+                    <p>Image 3</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/img4.jpg" alt="Image 4">
+                    <p>Image 4</p>
+                </div>
+            </div>
+            <div class="footer" id="footer">
+                <div class="footer-content">
+                    <footer>
+                        <p>Copyright &copy; 2022 CEITI</p>
+                        <p>About Us: Accest website (Studiu Individual) de Turcan Stanislav, Grupa: R-2222L </p>
+                        <p>Profesor: Petrovschi Andreea</p>
+                        <p>Contact: stas220044@gmail.com</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</body>
+</html>
